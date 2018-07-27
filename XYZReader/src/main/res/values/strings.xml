@@ -9,4 +9,10 @@
 
     <string name="up">Up</string>
 
+    <!-- ACTIVITY ARTICLE LIST -->
+    <string name="iv_thumbnail_description">Feed image</string>
+
+
+    <!-- FRAGMENT ARTICLE DETAIL-->
+    <string name="iv_photo_description">Main image</string>
 </resources>

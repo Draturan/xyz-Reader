@@ -20,7 +20,7 @@ public class RemoteEndpointUtil {
     }
 
     public static JSONArray fetchJsonArray() {
-        String itemsJson = null;
+        String itemsJson;
         try {
             itemsJson = fetchPlainText(Config.BASE_URL);
         } catch (IOException e) {
@@ -37,6 +37,7 @@ public class RemoteEndpointUtil {
             }
             return (JSONArray) val;
         } catch (JSONException e) {
+            e.printStackTrace();
             Log.e(TAG, "Error parsing items JSON", e);
         }
 
